@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用基于Vue.js驱动的Vuepress搭建静态博客 | JackTesla 的博客</title>
+    <meta name="description" content="最精彩的，其实就是世界本身！">
+    <link rel="icon" href="/JackTesla/favicon.ico">
+    
+    <link rel="preload" href="/JackTesla/assets/css/0.styles.62f0ae9c.css" as="style"><link rel="preload" href="/JackTesla/assets/js/app.05664379.js" as="script"><link rel="preload" href="/JackTesla/assets/js/9.ed06c0db.js" as="script"><link rel="preload" href="/JackTesla/assets/js/2.2161bd9a.js" as="script"><link rel="prefetch" href="/JackTesla/assets/js/10.fd04ec71.js"><link rel="prefetch" href="/JackTesla/assets/js/3.d8ad1bb0.js"><link rel="prefetch" href="/JackTesla/assets/js/4.a3660456.js"><link rel="prefetch" href="/JackTesla/assets/js/5.52e4a1c1.js"><link rel="prefetch" href="/JackTesla/assets/js/6.8fca5b25.js"><link rel="prefetch" href="/JackTesla/assets/js/7.1f12b4ca.js"><link rel="prefetch" href="/JackTesla/assets/js/8.98a54bbe.js">
+    <link rel="stylesheet" href="/JackTesla/assets/css/0.styles.62f0ae9c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/JackTesla/" class="home-link router-link-active"><!----> <span class="site-name">JackTesla 的博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术篇</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JackTesla/Stack/2019.1.2.html" class="nav-link router-link-exact-active router-link-active">Blog</a></li><li class="dropdown-item"><!----> <a href="/JackTesla/React/router.html" class="nav-link">React</a></li></ul></div></div><div class="nav-item"><a href="/JackTesla/Readme/index.html" class="nav-link">关于作者</a></div> <a href="https://github.com/18518300669/JackTeslaBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    gitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">技术篇</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/JackTesla/Stack/2019.1.2.html" class="nav-link router-link-exact-active router-link-active">Blog</a></li><li class="dropdown-item"><!----> <a href="/JackTesla/React/router.html" class="nav-link">React</a></li></ul></div></div><div class="nav-item"><a href="/JackTesla/Readme/index.html" class="nav-link">关于作者</a></div> <a href="https://github.com/18518300669/JackTeslaBlog.git" target="_blank" rel="noopener noreferrer" class="repo-link">
+    gitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>博客</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/JackTesla/Stack/2019.1.2.html" class="active sidebar-link">使用基于Vue.js驱动的Vuepress搭建静态博客</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/JackTesla/Stack/2019.1.2.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/JackTesla/Stack/2019.1.2.html#开始" class="sidebar-link">开始</a></li><li class="sidebar-sub-header"><a href="/JackTesla/Stack/2019.1.2.html#配置" class="sidebar-link">配置</a></li><li class="sidebar-sub-header"><a href="/JackTesla/Stack/2019.1.2.html#评论功能" class="sidebar-link">评论功能</a></li><li class="sidebar-sub-header"><a href="/JackTesla/Stack/2019.1.2.html#部署" class="sidebar-link">部署</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="使用基于vue-js驱动的vuepress搭建静态博客"><a href="#使用基于vue-js驱动的vuepress搭建静态博客" aria-hidden="true" class="header-anchor">#</a> 使用基于Vue.js驱动的Vuepress搭建静态博客</h1> <p><a href="https://github.com/18518300669/JackTeslaBlog" target="_blank" rel="noopener noreferrer">github仓库地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><a href="https://18518300669.github.io/JackTeslaBlog/" target="_blank" rel="noopener noreferrer">博客demo地址<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="介绍"><a href="#介绍" aria-hidden="true" class="header-anchor">#</a> 介绍</h2> <p>VuePress 由两部分组成：一个以 Vue 驱动的主题系统的简约静态网站生成工具，和一个为编写技术文档而优化的默认主题。它是为了支持 Vue 子项目的文档需求而创建的。</p> <p>由 VuePress 生成的每个页面，都具有相应的预渲染静态 HTML，它们能提供出色的加载性能，并且对 SEO 友好。然而，页面加载之后，Vue 就会将这些静态内容，接管为完整的单页面应用程序(SPA)。当用户在浏览站点时，可以按需加载其他页面。<br>
+VuePress 网站实际上是由 Vue, Vue Router 和 webpack 驱动的单页面应用程序。</p> <h3 id="类似的生成框架"><a href="#类似的生成框架" aria-hidden="true" class="header-anchor">#</a> 类似的生成框架</h3> <p>React驱动<a href="https://www.gatsbyjs.org/" target="_blank" rel="noopener noreferrer">GatsbyJs<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>Vue.js驱动<a href="https://gridsome.org/" target="_blank" rel="noopener noreferrer">Gridsome<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h2 id="开始"><a href="#开始" aria-hidden="true" class="header-anchor">#</a> 开始</h2> <h3 id="初始化"><a href="#初始化" aria-hidden="true" class="header-anchor">#</a> 初始化</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>// 在github上新建一个仓库，并克隆到本地
+git clone https://github.com/18518300669/JackTeslaBlog.git
+
+// 进入项目
+cd JackTeslaBlog
+
+//npm 初始化, 按照提示回车
+npm init
+
+//安装 vuepress
+npm i vuepress -D
+
+//安装 gh-pages
+npm i gh-pages -D
+
+//创建一个 docs 目录
+mkdir docs
+
+//创建一个 markdown 文件
+echo '# Hello VuePress' &gt; docs/README.md
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br></div></div><h3 id="npm-脚本"><a href="#npm-脚本" aria-hidden="true" class="header-anchor">#</a> npm 脚本</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vuepress dev docs&quot;,
+    &quot;build&quot;: &quot;vuepress build docs&quot;,
+    &quot;deploy&quot;: &quot;npm run build &amp;&amp; gh-pages -d docs/.vuepress/dist&quot;
+  }
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="运行本地开发环境"><a href="#运行本地开发环境" aria-hidden="true" class="header-anchor">#</a> 运行本地开发环境</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm run dev
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>访问 localhost:8080 ， 已经成功开启</p> <h3 id="生成静态资源"><a href="#生成静态资源" aria-hidden="true" class="header-anchor">#</a> 生成静态资源</h3> <p>执行下面的命令，生成静态资源.</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm run build
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>默认情况下，构建的文件会位于 docs/.vuepress/dist 中，该文件可以通过 docs/.vuepress/config.js 中的 dest 字段进行配置。</p> <h3 id="公共文件"><a href="#公共文件" aria-hidden="true" class="header-anchor">#</a> 公共文件</h3> <p>创建 docs/.vuepress/public 用于存放公共文件<br>
+我放了一个首页的umbrella.jpeg</p> <h3 id="首页编写"><a href="#首页编写" aria-hidden="true" class="header-anchor">#</a> 首页编写</h3> <p>docs/README.md为首页， 修改代码为：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>---
+home: true
+heroImage: /umbrella.jpeg
+footer: 世界再大，大不过你的好奇心呐～
+---
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="目录结构"><a href="#目录结构" aria-hidden="true" class="header-anchor">#</a> 目录结构</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>.
+├─ docs
+│  ├─ README.md	       //主页
+│  └─ .vuepress
+│  │  └─ components    //全局vue模版
+│  │  └─ dist          //构建产生目录
+│  │  └─ public        //存放静态文件
+│  │  └─ config.js	   //配置
+│  └─ React            //一级目录
+│  └─ Stack            //一级目录
+│  └─ ...              //一级目录
+└─ package.json
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="配置"><a href="#配置" aria-hidden="true" class="header-anchor">#</a> 配置</h2> <h3 id="基础配置"><a href="#基础配置" aria-hidden="true" class="header-anchor">#</a> 基础配置</h3> <p>创建 docs/.vuepress/config.js， 并进行简单配置</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>var config = {
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
+      ],
+      
+    // 静态网站部署的目录
+    base: '/JackTesla/',
+    
+    // 网站标题
+    title: 'JackTesla 的博客',
+  
+    // &lt;meta name=&quot;description&quot; content=&quot;...&quot;&gt;
+    description: '最精彩的，其实就是世界本身！', 
+  
+    markdown: {//markdown配置项
+      
+      // 显示代码行号
+      lineNumbers: true
+    },
+    themeConfig: {
+
+        // 项目的 github 地址
+        repo: 'https://github.com/18518300669/JackTeslaBlog.git',
+    
+        // github 地址的链接名
+        repoLabel: 'gitHub',
+    
+        // 配置导航栏
+        nav,
+        sidebar
+      },
+  }
+  
+  module.exports = config
+  
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br></div></div><p><a href="https://www.vuepress.cn/config/#%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE-basic-config" target="_blank" rel="noopener noreferrer">更多配置项<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="头部导航栏配置"><a href="#头部导航栏配置" aria-hidden="true" class="header-anchor">#</a> 头部导航栏配置</h3> <p>使用默认主题配置导航栏</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>//.vuepress/config.js：
+const nav = [
+     {
+        text: '技术篇',
+        items: [
+          { text: 'Blog', link: '/Stack/2019.1.2'},
+          { text: 'React', link: '/React/router' },
+        ]
+      },
+      {
+        text: '关于作者',
+        link: '/Readme/index'
+      },
+  ]
+  
+//在config的themeConfig中配置
+const config = {
+...
+  themeConfig: {
+	...
+    // 配置导航栏
+    nav,
+  },
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><h3 id="侧边导航栏配置"><a href="#侧边导航栏配置" aria-hidden="true" class="header-anchor">#</a> 侧边导航栏配置</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>//.vuepress/config.js：
+const sidebar = {
+    '/Stack/': [
+        {
+            title: '博客',
+            children: [
+                '2019.1.2'
+            ]
+        },
+       
+    ],
+    '/React/': [
+        {
+            title: 'React',
+            children: [
+                'router',
+                'reactRedux',
+            ]
+        },
+    ]
+}
+//在config的themeConfig中配置
+const config = {
+...
+  themeConfig: {
+	...
+    // 配置导航栏
+    sidebar,
+  },
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><h2 id="评论功能"><a href="#评论功能" aria-hidden="true" class="header-anchor">#</a> 评论功能</h2> <p>我们使用 valine 来实现评论功能：</p> <div class="tip custom-block"><p class="custom-block-title">Valine</p> <p>一款快速、简洁且高效的无后端评论系统。</p></div> <p>请先登录官网<a href="https://valine.js.org/quickstart.html" target="_blank" rel="noopener noreferrer"> Valine官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>，注册后食用。获取APP ID 和 APP Key</p> <h3 id="安装-valine"><a href="#安装-valine" aria-hidden="true" class="header-anchor">#</a> 安装 Valine</h3> <div class="language- line-numbers-mode"><pre class="language-text"><code>//Install leancloud's js-sdk
+npm install leancloud-storage --save
+
+//Install valine
+npm install valine --save
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><h3 id="注册-vuepress-全局组件"><a href="#注册-vuepress-全局组件" aria-hidden="true" class="header-anchor">#</a> 注册 vuepress 全局组件</h3> <p>创建 .vuepress/components/Valine.vue</p> <p>(在components下注册的vue可供全局使用，文件名为组件名）</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;template&gt;
+  &lt;div&gt; 
+    &lt;div id=&quot;vcomments&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: 'Valine',
+  mounted: function(){
+    // require window 
+    const Valine = require('valine');
+    if (typeof window !== 'undefined') {
+      this.window = window
+      window.AV = require('leancloud-storage')
+      
+    }
+     
+    new Valine({
+      el: '#vcomments' ,
+      appId: 'R1Qyeuv2BEooSWSVB2HmJyB7-gzGzoHsz',// your appId
+      appKey: 'GGneEbK7wGIhef7CVnUScHH7', // your appKey
+      notify:false, 
+      verify:false, 
+      avatar:'mm', 
+      placeholder: 'Please enter comments！' ,
+      path:window.location.pathname,//配置path地址，否则评论混乱
+    });
+  },
+}
+&lt;/script&gt;
+&lt;style&gt;
+#vcomments{
+  margin-top:100px;
+}
+&lt;/style&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><h3 id="使用-valine"><a href="#使用-valine" aria-hidden="true" class="header-anchor">#</a> 使用 Valine</h3> <p>只需要在 markdown 中调用即可</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>&lt;Valine&gt;&lt;/Valine&gt;
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h2 id="部署"><a href="#部署" aria-hidden="true" class="header-anchor">#</a> 部署</h2> <p>使用 gh-pages 进行项目部署</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>npm run deploy
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><p>过几分钟后，访问 <a href="https://18518300669.github.io/JackTeslaBlog/" target="_blank" rel="noopener noreferrer">https://18518300669.github.io/JackTeslaBlog/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>， 便可以看到在外网成功部署的静态博客</p> <p><a href="https://www.vuepress.cn/guide/deploy.html#github-%E9%A1%B5%E9%9D%A2" target="_blank" rel="noopener noreferrer">VuePreaa官方提供的部署方法<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <hr> <p><a href="https://www.vuepress.cn/" target="_blank" rel="noopener noreferrer">Vuepress官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> <a href="https://valine.js.org/" target="_blank" rel="noopener noreferrer">Valine官网<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <div><div id="vcomments"></div></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/JackTesla/assets/js/app.05664379.js" defer></script><script src="/JackTesla/assets/js/9.ed06c0db.js" defer></script><script src="/JackTesla/assets/js/2.2161bd9a.js" defer></script>
+  </body>
+</html>

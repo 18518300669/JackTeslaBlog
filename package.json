@@ -1,0 +1,35 @@
+{
+  "name": "JackTeslaBlog",
+  "version": "1.0.0",
+  "description": "Blogs built with vuepress",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "npm run build && gh-pages -d docs/.vuepress/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18518300669/JackTeslaBlog.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "vue",
+    "mkdown",
+    "blog"
+  ],
+  "author": "http://jacktesla.xyz/",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18518300669/JackTeslaBlog/issues"
+  },
+  "homepage": "https://github.com/18518300669/JackTeslaBlog#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1",
+    "vuepress": "^0.14.9"
+  },
+  "dependencies": {
+    "leancloud-storage": "^3.11.1",
+    "valine": "^1.3.4"
+  }
+}
