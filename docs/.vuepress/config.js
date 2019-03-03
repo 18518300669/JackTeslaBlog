@@ -37,7 +37,7 @@ var config = {
       ],
 
     // 静态网站部署的目录
-    base: '/JackTesla/',
+    base: '/JackTeslaBlog/',
   
     // 网站标题
     title: 'JackTesla 的博客',
